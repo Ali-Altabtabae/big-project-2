@@ -1,37 +1,56 @@
-import React from 'react';
-import { View } from 'react-native';
-import PropTypes from 'prop-types';
-import styles from './styles';
-import MenuButton from '../../components/MenuButton/MenuButton';
-
+import React from "react";
+import { View } from "react-native";
+import PropTypes from "prop-types";
+import styles from "./styles";
+import MenuButton from "../../components/MenuButton/MenuButton";
+import authStore from "../../../stores/authStore"
 export default class DrawerContainer extends React.Component {
   render() {
     const { navigation } = this.props;
     return (
-      <View style={styles.content}>
+      <View style={styles.content} backgroundColor='#F5E4D7'>
         <View style={styles.container}>
           <MenuButton
             title="HOME"
-            source={require('../../../assets/icons/home.png')}
+            source={require("../../../assets/icons/home.png")}
             onPress={() => {
-              navigation.navigate('Home');
+              navigation.navigate("Home");
+              navigation.closeDrawer();
+            }}
+          />
+
+          <MenuButton
+            title="MYTEAM"
+            source={require("../../../assets/icons/category.png")}
+            onPress={() => {
+              navigation.navigate("MyTeam");
               navigation.closeDrawer();
             }}
           />
           <MenuButton
-            title="CATEGORIES"
-            source={require('../../../assets/icons/category.png')}
+            title="FIELDS"
+            source={require("../../../assets/icons/category.png")}
             onPress={() => {
-              navigation.navigate('Categories');
+              navigation.navigate("Fields");
               navigation.closeDrawer();
             }}
           />
+        
           <MenuButton
-            title="SEARCH"
-            source={require('../../../assets/icons/search.png')}
+            title="TEAMS"
+            source={require("../../../assets/icons/category.png")}
             onPress={() => {
-              navigation.navigate('Search');
+              navigation.navigate("Teams");
               navigation.closeDrawer();
+            }}
+          />
+       
+          <MenuButton
+            title="SIGN OUT"
+            source={require("../../../assets/icons/clear.png")}
+            onPress={() => {
+              authStore.signout();
+              navigation.navigate("Signin");
             }}
           />
         </View>
@@ -42,6 +61,6 @@ export default class DrawerContainer extends React.Component {
 
 DrawerContainer.propTypes = {
   navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired
-  })
+    navigate: PropTypes.func.isRequired,
+  }),
 };

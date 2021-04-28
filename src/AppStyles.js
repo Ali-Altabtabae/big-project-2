@@ -22,7 +22,7 @@ export const RecipeCard = StyleSheet.create({
     height: RECIPE_ITEM_HEIGHT + 75,
     borderColor: '#cccccc',
     borderWidth: 0.5,
-    borderRadius: 15
+    borderRadius: 15,
   },
   photo: {
     width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
@@ -40,9 +40,10 @@ export const RecipeCard = StyleSheet.create({
     marginTop: 3,
     marginRight: 5,
     marginLeft: 5,
+    
   },
   category: {
     marginTop: 5,
-    marginBottom: 5
+    marginBottom: 5,
   }
 });

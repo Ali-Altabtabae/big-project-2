@@ -22,11 +22,12 @@ export default class CategoriesScreen extends React.Component {
   onPressCategory = item => {
     const title = item.name;
     const category = item;
+    console.log("API: ",item)
     this.props.navigation.navigate('RecipesList', { category, title });
   };
 
   renderCategory = ({ item }) => (
-    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressCategory(item)}>
+    <TouchableHighlight underlayColor='rgba(73,182,77,0.9)' onPress={() => this.onPressCategory(item)}>
       <View style={styles.categoriesItemContainer}>
         <Image style={styles.categoriesPhoto} source={{ uri: item.photo_url }} />
         <Text style={styles.categoriesName}>{item.name}</Text>
