@@ -38,7 +38,11 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View >
+      <View backgroundColor={'white'}>
+         <Image
+          style={styles.image}
+          source={require("../../../assets/icons/football-background5.jpeg")}
+        />
         <FlatList
           vertical
           showsVerticalScrollIndicator={false}

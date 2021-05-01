@@ -46,7 +46,7 @@ export const AuthHeader = styled.View`
   align-items: center;
   background-color: #f5e4d7;
   border-bottom-width: 1px;
-  border-color: #05668d;
+  border-color: #306B34;
 `;
 
 export const HeaderTitle = styled.Text`
@@ -58,7 +58,7 @@ export const HeaderTitle = styled.Text`
 export const AuthTitle = styled.Text`
   font-size: 24px;
   margin-bottom: 20px;
-  color: #05668d;
+  color: #306B34;
 `;
 
 export const AuthTextInput = styled.TextInput`
@@ -67,15 +67,15 @@ export const AuthTextInput = styled.TextInput`
   height: 40px;
   margin-bottom: 30px;
   border-bottom-width: 1px;
-  border-color: #05668d
-  color: #05668d
+  border-color: #306B34
+  color: #306B34
 `;
 
 export const AuthButton = styled.TouchableOpacity`
   align-self: stretch;
   align-items: center;
   padding: 20px;
-  background-color: #05668d;
+  background-color: #306B34;
   margin-top: 30px;
 `;
 
@@ -87,7 +87,7 @@ export const AuthButtonText = styled.Text`
 
 export const AuthOther = styled.Text`
   margin-top: 15px;
-  color: #05668d;
+  color: #306B34;
 `;
 
 export const TeamItemStyled = styled.Text`
@@ -104,7 +104,7 @@ export const HomeContainer = styled.View`
   flex: 8;
   align-self: stretch;
   align-items: center;
-  background-color: #05668d;
+  background-color: #306B34;
   padding-right: 60px;
   padding-left: 60px;
 `;
@@ -112,7 +112,7 @@ export const HomeButton = styled.TouchableOpacity`
   align-self: stretch;
   align-items: center;
   padding: 20px;
-  background-color: #05668d;
+  background-color: #306B34;
   margin-top: 30px;
   border: 3px;
   border-color: #f5e4d7;

@@ -1,43 +1,98 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  fieldsItemContainer: {
+  container: {
     flex: 1,
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 215,
-    borderColor: '#cccccc',
-    borderWidth: 0.5,
-    borderRadius: 20,
+    marginTop: 20,
+    backgroundColor: "#eeeeee",
   },
-  fieldsPhoto: {
-    width: '100%',
-    height: 155,
-    borderRadius: 20,
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0,
-    shadowColor: 'blue',
+  header: {
+    backgroundColor: "#00CED1",
+    height: 200,
+  },
+  headerContent: {
+    padding: 30,
+    alignItems: "center",
+    flex: 1,
+  },
+  detailContent: {
+    top: 80,
+    height: 500,
+    marginHorizontal: 30,
+    flexDirection: "row",
+    position: "absolute",
+    backgroundColor: "#ffffff",
+  },
+  userList: {
+    flex: 1,
+  },
+  cardContent: {
+    marginLeft: 20,
+    marginTop: 10,
+  },
+  image: {
+    width: 110,
+    height: 90,
+    borderRadius: 5,
+  },
+  card: {
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 3
+      height: 12,
     },
-    shadowRadius: 5,
-    shadowOpacity: 1.0,
-    elevation: 3
+    shadowOpacity: 0.58,
+    shadowRadius: 16.00,
+    elevation: 24,
+
+    marginVertical: 10,
+    marginHorizontal: 20,
+    backgroundColor: "white",
+    flexBasis: "46%",
+    padding: 10,
+    flexDirection: "row",
   },
-  fieldsName: {
+  name: {
+    fontSize: 16,
     flex: 1,
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#333333',
-    marginTop: 8
+    alignSelf: "stretch",
+    color: "#306B34",
+    fontWeight: "bold",
+    //marginTop: 5,
+    textAlign: "left",
   },
-  fieldsInfo: {
-    marginTop: 3,
-    marginBottom: 5
-  }
+  nameDetail: {
+    fontSize: 16,
+    flex: 1,
+    alignSelf: "stretch",
+    //color: "#008080",
+    //marginTop: 5,
+    textAlign: "left",
+  },
+  position: {
+    fontSize: 14,
+    flex: 1,
+    alignSelf: "center",
+    color: "#696969",
+  },
+  about: {
+    marginHorizontal: 10,
+  },
+
+  followButton: {
+    marginTop: 10,
+    height: 35,
+    width: 100,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 30,
+    backgroundColor: "#00BFFF",
+  },
+  followButtonText: {
+    color: "#FFFFFF",
+    fontSize: 20,
+  },
 });
 
 export default styles;

@@ -18,7 +18,7 @@ import {
 } from "../../data/MockDataAPI";
 import BackButton from "../../components/BackButton/BackButton";
 import JoinTeamButton from "../../components/JoinTeamButton/JoinTeamButton";
-import DeleteTeamButton from "../../components/DeleteTeamButton/DeleteTeamButton";
+import TimeButton from "../../components/TimeButton/TimeButton";
 import authStore from "../../../stores/authStore";
 
 const { width: viewportWidth } = Dimensions.get("window");
@@ -65,20 +65,23 @@ export default class TeamDetailsScreen extends React.Component {
 
     return (
       <ScrollView style={styles.container}>
+        <Image
+          style={styles.image2}
+          source={require("../../../assets/icons/black-to-white.jpeg")}
+        />
         <View style={styles.carouselContainer}>
-          <View style={styles.carousel}></View>
+          <View style={styles.carousel}>
+            <View style={styles.infoContainer}>
+            </View>
+          </View>
         </View>
         <View style={styles.infoRecipeContainer}>
           <Text style={styles.infoRecipeName}>{item.title}</Text>
           <View style={styles.infoContainer}>
             <TouchableHighlight onPress={() => {}}>
-              <Text style={styles.category}>
-                {item.teamName}
-              </Text>
+              <Text style={styles.category}>{item.teamName}</Text>
             </TouchableHighlight>
           </View>
-
-
           <View style={styles.infoContainer}>
             <JoinTeamButton
               onPress={async () => {
@@ -88,17 +91,11 @@ export default class TeamDetailsScreen extends React.Component {
               }}
             />
           </View>
-          <View style={styles.infoContainer}>
-            <DeleteTeamButton
-              onPress={async () => {
-                console.log("Team Id; ", item.id)
-                await authStore.deleteTeam(item.id);
-                navigation.navigate("Teams");
-                alert(`You deleted team ${item.teamName}`);
-              }}
-            />
-          </View>
         </View>
+        <Image
+          style={styles.image}
+          source={require("../../../assets/icons/players3.jpeg")}
+        />
       </ScrollView>
     );
   }

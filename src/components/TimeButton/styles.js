@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderRadius: 100,
     //borderColor: '#2cd18a',
-    borderColor: "#b20000",
+    borderColor: "#306B34",
     borderWidth: 3,
     justifyContent: "center",
     alignItems: "center",
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    color: "#b20000",
+    color: "#306B34",
     fontWeight: "bold",
 
     //color: '#2cd18a'

@@ -1,5 +1,4 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
 const { width: viewportWidth } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
@@ -8,21 +7,20 @@ const styles = StyleSheet.create({
     flex: 1
   },
   carouselContainer: {
-    minHeight: 250
+    minHeight: 150
   },
   carousel: {},
 
   image: {
     ...StyleSheet.absoluteFillObject,
     width: '100%',
-    height: 350,
-    marginTop: 500,
+    height: 800,
   },
   imageContainer: {
     flex: 1,
     justifyContent: 'center',
     width: viewportWidth,
-    height: 250
+    height: 250,
   },
   paginationContainer: {
     flex: 1,
@@ -39,8 +37,8 @@ const styles = StyleSheet.create({
   },
   infoRecipeContainer: {
     flex: 1,
-    margin: 25,
-    marginTop: 20,
+    margin: 5,
+    marginTop: 0,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -49,6 +47,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    padding: 10
   },
   buttonContainer: {
     flex: 1,
@@ -59,7 +58,8 @@ const styles = StyleSheet.create({
   image2: {
     ...StyleSheet.absoluteFillObject,
     width: "100%",
-    height: 650,
+    height: 350,
+    marginTop: 500
   },
   infoRecipe: {
     fontSize: 14,

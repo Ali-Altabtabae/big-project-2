@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   image: {
     ...StyleSheet.absoluteFillObject,
     width: "100%",
-    height: 250,
+    height: 950,
   },
   imageContainer: {
     flex: 1,
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     height: 20,
     width: 20,
     marginRight: 0,
+    marginBottom: 10,
   },
   infoRecipe: {
     fontSize: 14,
@@ -66,12 +67,21 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     marginBottom: 10,
   },
+  infoLocation: {
+    fontSize: 14,
+    fontWeight: "bold",
+    marginLeft: 5,
+    marginBottom: 10,
+    textDecorationLine: 'underline',
+    color: "#7B506F"
+  },
   category: {
     fontSize: 24,
     fontWeight: "bold",
     margin: 10,
     marginBottom: 20,
-    color: "#05668d",
+    color: "#306B34",
+    
   },
   infoDescriptionRecipe: {
     textAlign: "left",
@@ -100,6 +110,12 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     shadowOpacity: 1.0,
     elevation: 3,
+  },
+  infoDescription: {
+    textAlign: "left",
+    fontSize: 16,
+    marginTop: 30,
+    margin: 15,
   },
 });
 

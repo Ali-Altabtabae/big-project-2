@@ -23,6 +23,13 @@ export const RecipeCard = StyleSheet.create({
     borderColor: '#cccccc',
     borderWidth: 0.5,
     borderRadius: 15,
+    shadowColor: "#000",
+    
+    shadowOpacity: 0.58,
+    shadowRadius: 16.00,
+    elevation: 24,
+
+    backgroundColor: "#e8e9ec",
   },
   photo: {
     width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
@@ -36,14 +43,13 @@ export const RecipeCard = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: '#444444',
+    color: '#306B34',
     marginTop: 3,
     marginRight: 5,
     marginLeft: 5,
-    
   },
   category: {
-    marginTop: 5,
+    marginTop: 0,
     marginBottom: 5,
   }
 });

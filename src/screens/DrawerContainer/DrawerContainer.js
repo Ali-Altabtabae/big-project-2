@@ -8,7 +8,7 @@ export default class DrawerContainer extends React.Component {
   render() {
     const { navigation } = this.props;
     return (
-      <View style={styles.content} backgroundColor='#F5E4D7'>
+      <View style={styles.content} backgroundColor='#E6E6E6'>
         <View style={styles.container}>
           <MenuButton
             title="HOME"
@@ -44,7 +44,6 @@ export default class DrawerContainer extends React.Component {
               navigation.closeDrawer();
             }}
           />
-       
           <MenuButton
             title="SIGN OUT"
             source={require("../../../assets/icons/clear.png")}

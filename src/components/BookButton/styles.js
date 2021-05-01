@@ -9,15 +9,17 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     borderRadius: 100,
-    borderColor: '#05668d',
-    borderWidth: 1,
+    borderColor: '#306B34',
+    //borderColor: '#05668d',
+    borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center'
     // backgroundColor: '#2cd18a'
   },
   text: {
     fontSize: 14,
-    color: '#05668d'
+    color: '#306B34',
+    fontWeight: 'bold'
   }
 });
 

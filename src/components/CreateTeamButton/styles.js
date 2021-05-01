@@ -9,16 +9,29 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     borderRadius: 100,
-    borderColor: 'darkblue',
-    borderWidth: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-    // backgroundColor: '#2cd18a'
+    //borderColor: '#2cd18a',
+    borderColor: '#22428d',
+    borderWidth: 3,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: '#e8e9ec',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0, 
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
   },
   text: {
     fontSize: 14,
-    color: 'darkblue'
-  }
+    color: "#22428d",
+    fontWeight: "bold",
+
+    //color: '#2cd18a'
+    // backgroundColor: 'green'
+  },
 });
 
 export default styles;

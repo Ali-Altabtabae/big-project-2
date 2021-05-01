@@ -35,7 +35,7 @@ export const AuthContainer = styled.View`
   align-self: stretch;
   justify-content: center;
   align-items: center;
-  background-color: #05668d;
+  background-color: #306B34;
   padding-right: 60px;
   padding-left: 60px;
 `;
@@ -44,21 +44,21 @@ export const AuthHeader = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: #05668d;
+  background-color: #306B34;
   border-bottom-width: 1px;
-  border-color: #f5e4d7;
+  border-color: white;
 `;
 
 export const HeaderTitle = styled.Text`
   font-size: 16px;
   margin-top: 20px;
-  color: #f5e4d7;
+  color: white;
 `;
 
 export const AuthTitle = styled.Text`
   font-size: 24px;
   margin-bottom: 20px;
-  color: #f5e4d7;
+  color: white;
 `;
 
 export const AuthTextInput = styled.TextInput`
@@ -67,22 +67,22 @@ export const AuthTextInput = styled.TextInput`
   height: 40px;
   margin-bottom: 30px;
   border-bottom-width: 1px;
-  border-color: #F5E4D7
-  color: #F5E4D7
+  border-color: white
+  color: white
 `;
 
 export const AuthButton = styled.TouchableOpacity`
   align-self: stretch;
   align-items: center;
   padding: 20px;
-  background-color: #f5e4d7;
+  background-color: white;
   margin-top: 30px;
 `;
 
 export const AuthButtonText = styled.Text`
   font-weight: bold;
   font-size: 18px;
-  color: #05668d;
+  color: #306B34;
 `;
 
 export const AuthOther = styled.Text`
@@ -104,7 +104,7 @@ export const HomeContainer = styled.View`
   flex: 8;
   align-self: stretch;
   align-items: center;
-  background-color: #05668d;
+  background-color: #306B34;
   padding-right: 60px;
   padding-left: 60px;
 `;
@@ -112,16 +112,16 @@ export const HomeButton = styled.TouchableOpacity`
   align-self: stretch;
   align-items: center;
   padding: 20px;
-  background-color: #05668d;
+  background-color: #306B34;
   margin-top: 30px;
   border: 3px;
-  border-color: #f5e4d7;
+  border-color: white;
   border-radius: 5px;
 `;
 export const HomeButtonText = styled.Text`
   font-weight: bold;
   font-size: 18px;
-  color: #f5e4d7;
+  color: white;
 `;
 
 // Fields Page
@@ -140,7 +140,7 @@ export const FieldButton = styled.TouchableOpacity`
   background-color: #306b34;
   margin-top: 30px;
   border: 3px;
-  border-color: #f5e4d7;
+  border-color: white;
   border-radius: 5px;
 `;
 export const Wrapper = styled.ScrollView`
@@ -150,7 +150,7 @@ export const Wrapper = styled.ScrollView`
 export const FieldButtonText = styled.Text`
   font-weight: bold;
   font-size: 18px;
-  color: #f5e4d7;
+  color: white;
 `;
 
 export const FieldHeader = styled.View`
@@ -159,7 +159,7 @@ export const FieldHeader = styled.View`
   align-items: center;
   background-color: #306b34;
   border-bottom-width: 1px;
-  border-color: #f5e4d7;
+  border-color: white;
 `;
 
 // Team Page
@@ -178,13 +178,13 @@ export const TeamPageButton = styled.TouchableOpacity`
   background-color: #7b506f;
   margin-top: 30px;
   border: 3px;
-  border-color: #f5e4d7;
+  border-color: white;
   border-radius: 5px;
 `;
 export const TeamPageButtonText = styled.Text`
   font-weight: bold;
   font-size: 18px;
-  color: #f5e4d7;
+  color: white;
 `;
 
 export const TeamPageHeader = styled.View`
@@ -193,7 +193,7 @@ export const TeamPageHeader = styled.View`
   align-items: center;
   background-color: #7b506f;
   border-bottom-width: 1px;
-  border-color: #f5e4d7;
+  border-color: white;
 `;
 
 // Sign Out Button
@@ -206,5 +206,5 @@ export const SignOutButton = styled.TouchableOpacity`
 `;
 export const SignOutButtonText = styled.Text`
   font-size: 18px;
-  color: #f5e4d7;
+  color: white;
 `;
