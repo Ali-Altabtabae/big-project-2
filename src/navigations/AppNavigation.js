@@ -20,6 +20,7 @@ import IngredientScreen from "../screens/Ingredient/IngredientScreen";
 import SearchScreen from "../screens/Search/SearchScreen";
 import IngredientsDetailsScreen from "../screens/IngredientsDetails/IngredientsDetailsScreen";
 import TimeListScreen from "../screens/TimeList/TimeListScreen";
+import TeamMembersScreen from "../screens/TeamMembers/TeamMembersScreen";
 import Signin from "../screens/Signin/Signin";
 import Signup from "../screens/Signup/Signup";
 
@@ -66,6 +67,7 @@ const MainNavigator = createStackNavigator(
     Search: SearchScreen,
     IngredientsDetails: IngredientsDetailsScreen,
     TimeList: TimeListScreen,
+    TeamMembers: TeamMembersScreen,
 
   },
   {

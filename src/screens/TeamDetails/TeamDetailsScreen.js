@@ -18,7 +18,7 @@ import {
 } from "../../data/MockDataAPI";
 import BackButton from "../../components/BackButton/BackButton";
 import JoinTeamButton from "../../components/JoinTeamButton/JoinTeamButton";
-import TimeButton from "../../components/TimeButton/TimeButton";
+import TeamMembersButton from "../../components/TeamMembersButton/TeamMembersButton";
 import authStore from "../../../stores/authStore";
 
 const { width: viewportWidth } = Dimensions.get("window");
@@ -52,6 +52,10 @@ export default class TeamDetailsScreen extends React.Component {
     </TouchableHighlight>
   );
 
+  onPressMembers= () => {
+    this.props.navigation.navigate("TeamMembers");
+  };
+
   onPressIngredient = (item) => {
     var name = getIngredientName(item);
     let ingredient = item;
@@ -81,6 +85,11 @@ export default class TeamDetailsScreen extends React.Component {
             <TouchableHighlight onPress={() => {}}>
               <Text style={styles.category}>{item.teamName}</Text>
             </TouchableHighlight>
+          </View>
+          <View style={styles.infoContainer}>
+            <TeamMembersButton
+              onPress={() => {this.onPressMembers()}}
+            />
           </View>
           <View style={styles.infoContainer}>
             <JoinTeamButton
